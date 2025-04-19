@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+    --color-light-cream: #FFF9F3;
+    --color-midnight-blue: #17134a;
+    --color-slateblue: #45426e;
+    --color-midnight-blue-100: #080a471a;
+    --color-indigo: #3a30ba;
+    --color-indigo-light: #8C3BFC;
+    --color-light-pink: #fdeff7;
+    --color-mint: #F1FAF7;
+    --color-lavender: #EEEBFA;
+    --color-dark-blue: #030521;
+    --color-transparent-white: #d1d0db;
+    --color-transparent-black: #FFFFFFCC;
+    --color-blue-icon: #8C3BFC;
+    --color-red-icon: #DE238E;
+    --color-skyblue-icon: #27A6FE;
+    --color-grayish-blue: #F6F6FC;
+    --color-light-blue: #a2a1b7;
+    --breakpoint-xs: 540px;
+}
+
+body {
+    @apply text-slateblue;
+}
+
+h1, h3, h4, h5 {
+    @apply text-midnight-blue;
+}
+
+.container {
+    @apply lg:w-[1170px] mx-auto px-4;
+}
+
+.logo-style {
+    @apply max-h-10 filter grayscale brightness-100 saturate-100 opacity-100 contrast-100 invert-0;
+}
+
+.active {
+    @apply bg-[#FFCC85];
+}
+
+.btn-hover {
+    @apply hover:bg-[#231f94] duration-300 cursor-pointer;
+}
+
+.footer-hover {
+    @apply hover:text-white;
+}
